@@ -1,0 +1,24 @@
+h1, h2 {
+    color: #33b400;
+}
+
+.pont {
+    color: red;
+}
+
+.container {
+    width: 500px;
+    margin: auto;
+    text-align: center;
+}
+
+.kep {
+    display: block;
+    width: 200px;
+    height: 200px;
+}
+
+.kepek {
+    display: flex;
+    justify-content: center;
+}

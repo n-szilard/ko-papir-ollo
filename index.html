@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kő papír ovló</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Kő - Papír - Olló</h1>
+        <div class="kepek">
+            <img src="./kepek/ko.png" id="ko" class="kep" onclick="ko()">
+            <img src="./kepek/papir.png" id="papir" class="kep" onclick="papir()">
+            <img src="./kepek/ollo.png" id="ollo" class="kep" onclick="ollo()">
+        </div>
+        <h1>Gép választása</h1>
+        <div class="kepek"><img src="" id="gepValasztas" class="kep"></div>
+        <h1 id="eredmeny">Eredmény:</h1>
+        <h2>Te pontod</h2>
+        <h2 class="pont" id="jatekosPont">0</h2>
+        <h2>Gép pontja</h2>
+        <h2 class="pont" id="gepPont">0</h2>
+    </div>
+    <script src="./app.js"></script>
+</body>
+</html>
