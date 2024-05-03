@@ -36,30 +36,34 @@ function jatek(valasztott) {
     gepValasztottKep.src = "./kepek/" + gepValasztott + ".png"
 
 
-    if (valasztott == gepValasztott) {
-        eredmenyElem.innerHTML = "Eredmény: döntetlen"
-    } else if (valasztott == "ko" && gepValasztott == "papir") {
-        eredmenyElem.innerHTML = "Eredmény: Vesztettél"
-        gepPont++;
-    } else if (valasztott == "ko" && gepValasztott == "ollo") {
-        eredmenyElem.innerHTML = "Eredmény: Nyertél"
-        jatekosPont++;
-    } else if (valasztott == "papir" && gepValasztott == "ko") {
-        eredmenyElem.innerHTML = "Eredmény: Nyertél"
-        jatekosPont++;
-    }  else if (valasztott == "papir" && gepValasztott == "ollo") {
-        eredmenyElem.innerHTML = "Eredmény: Vesztettel"
-        gepPont++;
-    }   else if (valasztott == "ollo" && gepValasztott == "ko") {
-        eredmenyElem.innerHTML = "Eredmény: Vesztettel"
-        gepPont++;
-    }   else if (valasztott == "ollo" && gepValasztott == "papir") {
-        eredmenyElem.innerHTML = "Eredmény: Nyertél"
-        jatekosPont++;
-    }
+    eredmeny(valasztott, gepValasztott, eredmenyElem);
 
     document.getElementById("jatekosPont").innerHTML = jatekosPont;
     document.getElementById("gepPont").innerHTML = gepPont;
+}
+
+function eredmeny(valasztott, gepValasztott, eredmenyElem) {
+    if (valasztott == gepValasztott) {
+        eredmenyElem.innerHTML = "Eredmény: döntetlen";
+    } else if (valasztott == "ko" && gepValasztott == "papir") {
+        eredmenyElem.innerHTML = "Eredmény: Vesztettél" `${jatekosPont}`;
+        gepPont++;
+    } else if (valasztott == "ko" && gepValasztott == "ollo") {
+        eredmenyElem.innerHTML = "Eredmény: Nyertél";
+        jatekosPont++;
+    } else if (valasztott == "papir" && gepValasztott == "ko") {
+        eredmenyElem.innerHTML = "Eredmény: Nyertél";
+        jatekosPont++;
+    } else if (valasztott == "papir" && gepValasztott == "ollo") {
+        eredmenyElem.innerHTML = "Eredmény: Vesztettel";
+        gepPont++;
+    } else if (valasztott == "ollo" && gepValasztott == "ko") {
+        eredmenyElem.innerHTML = "Eredmény: Vesztettel";
+        gepPont++;
+    } else if (valasztott == "ollo" && gepValasztott == "papir") {
+        eredmenyElem.innerHTML = "Eredmény: Nyertél";
+        jatekosPont++;
+    }
 }
 
 function getRandomInt(max) {
