@@ -46,7 +46,7 @@ function eredmeny(valasztott, gepValasztott, eredmenyElem) {
     if (valasztott == gepValasztott) {
         eredmenyElem.innerHTML = "Eredmény: döntetlen";
     } else if (valasztott == "ko" && gepValasztott == "papir") {
-        eredmenyElem.innerHTML = "Eredmény: Vesztettél" `${jatekosPont}`;
+        eredmenyElem.innerHTML = "Eredmény: Vesztettél";
         gepPont++;
     } else if (valasztott == "ko" && gepValasztott == "ollo") {
         eredmenyElem.innerHTML = "Eredmény: Nyertél";
